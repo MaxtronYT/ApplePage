@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,minimum-scale=1.0"
+    />
+    <title>Apple</title>
+    <link rel="stylesheet" href="assets/index.d3837bd4.css" />
+  </head>
+  <body class="overflow-x-hidden w-screen font-sans">
+    <div
+      id="nav"
+      class="h-11 delay-75 transition ease-in duration-300 px-0 iphone_mid:px-20 bg-[#000000CC] text-[#f5f5f7c1] text-[12px] font-raleway w-screen"
+    >
+      <div
+        class="hidden iphone_mid:flex justify-between h-full my-auto items-center px-[4vw]"
+      >
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          <img
+            src="https://www.apple.com/ac/globalnav/7/en_IN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg"
+            alt=""
+            width="16px"
+          />
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          Store
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          Mac
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          iPad
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          iPhone
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          Watch
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          Airpods
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          TV & Home
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          Only on Apple
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          Accessories
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          Support
+        </div>
+        <div
+          id="search_bt"
+          class="hover:text-white flex items-center z-10 space-x-3 duration-200 ease-in transition"
+        >
+          <span id="search_span">Search</span>
+          <input
+            type="text"
+            id="search-bar"
+            class="rounded-md hidden outline-none text-xl bg-[#000000CC] text-slate-400 px-10"
+            placeholder="Search apple.com"
+          />
+        </div>
+        <div class="disappear hover:text-white duration-200 ease-in transition">
+          <img
+            src="https://www.apple.com/ac/globalnav/7/en_IN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_small.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="iphone_mid:hidden flex flex-col grow my-auto h-full">
+        <div id="mob_menu" class="flex px-4 justify-between items-center">
+          <div onclick="showitems()" class="hamburger justify-between">
+            <span
+              id="bar-one"
+              class="bar transition ease-in duration-200"
+            ></span>
+            <span
+              id="bar-two"
+              class="bar transition ease-in duration-200"
+            ></span>
+          </div>
+          <div id="Logo">
+            <img
+              src="https://www.apple.com/ac/globalnav/7/en_IN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg"
+              alt=""
+              width="16px"
+            />
+          </div>
+          <div id="shop">
+            <img
+              src="https://www.apple.com/ac/globalnav/7/en_IN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_small.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          id="hidden_items_nav"
+          class="flex-col text-[16px] space-y-6 my-6 px-5 divide-y hidden items-center w-full"
+        >
+          <div class="hover:text-white duration-200 ease-in transition">
+            Store
+          </div>
+          <div class="hover:text-white duration-200 ease-in transition">
+            Mac
+          </div>
+          <div class="hover:text-white duration-200 ease-in transition">
+            iPad
+          </div>
+          <div class="hover:text-white duration-200 ease-in transition">
+            iPhone
+          </div>
+          <div class="hover:text-white duration-200 ease-in transition">
+            Watch
+          </div>
+          <div class="hover:text-white duration-200 ease-in transition">
+            Airpods
+          </div>
+          <div class="hover:text-white duration-200 ease-in transition">
+            TV & Home
+          </div>
+          <div class="hover:text-white duration-200 ease-in transition">
+            Only on Apple
+          </div>
+          <div class="hover:text-white duration-200 ease-in transition">
+            Accessories
+          </div>
+          <div class="hover:text-white duration-200 ease-in transition">
+            Support
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="border" class="">
+      <div
+        id="iphone"
+        class="flex flex-col px-[4vw] z-50 border-b border-slate-400 bg-opacity-60 backdrop-blur-lg w-screen bg-white fixed iphone_sm:fixed border-opacity-60 items-center justify-between py-2"
+      >
+        <div
+          class="flex w-full mx-0 iphone_mid:mx-[5.7vw] items-start grow justify-between"
+        >
+          <div class="font-bold text-xl">iPhone 13 Pro</div>
+          <div
+            class="w-[40vw] flex justify-evenly px-1 iphone_mid:items-center"
+          >
+            <div class="hidden iphone_mid:flex grow justify-around">
+              <div class="opacity-50">Overview</div>
+              <div class="hover:text-blue-500">Switching to iPhone</div>
+              <div class="hover:text-blue-500">Tech Specs</div>
+            </div>
+
+            <div class="ml-[60%] iphone_mid:ml-0 flex space-x-4">
+              <div
+                onclick="shownav()"
+                class="block iphone_mid:hidden font-bold rotate-90 text-2xl"
+              >
+                >
+              </div>
+              <button
+                class="bg-blue-600 hover:bg-blue-500 rounded-2xl px-4 py-1 text-white"
+              >
+                Buy
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="hid-nav"
+          class="divide-y-2 border-t border-gray-400 transition-all ease-in duration-200 w-screen px-4 hidden flex-col"
+        >
+          <div class="px-3 py-3 opacity-70">Overview</div>
+          <div class="px-3 hover:text-blue-400 py-3">Switching to iPhone</div>
+          <div class="px-3 hover:text-blue-400 py-3 mb-3">Tech Specs</div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <div
+        id="iphone_13-bg"
+        style="
+          background-image: url('assets/iphone.8b61b6eb.jpg');
+          background-position-x: 50%;
+          background-position-y: 0%;
+        "
+        class="flex h-screen flex-col mt-[97px] bottom-0 w-screen bg-no-repeat bg-cover iphone_big:my-[130px] mx-auto"
+      >
+        <span class="font-bold z-10 text-xl">iPhone 13 Pro</span>
+        <span
+          class="font-bold font-apple z-10 text-[56px] iphone_big:text-[80px] mt-[10px]"
+        >
+          Oh.So.Pro
+        </span>
+      </div>
+    </div>
+
+    <div
+      class="bg-cover z-20 justify-around pt-[68px] pb-[75px] font-bold text-white bg-center"
+      style="background-image: url('assets/bg.40e22851.jpg')"
+    >
+      <div class="w-[80%] px-[5vw] text-left mx-auto">
+        <p
+          class="text-white text-[32px] iphone_mid:text-[64px] iphone_big:text-[80px] font-semibold"
+        >
+          A dramatically more powerful camera system. A display so responsive,
+          every interaction feels new again. The world’s fastest smartphone
+          chip. Exceptional durability. And a huge leap in battery life.
+        </p>
+        <span
+          class="text-[32px] iphone_mid:text-[64px] iphone_big:text-[80px] mt-9 mb-9 iphone_big:mt-[53px] iphone_big:mb-[65px]"
+        >
+          Let's Pro.
+        </span>
+        <br />
+        <span class="text-[19px] iphone_big:text-[24px] mt-5">
+          From 119900.00* before trade-in
+        </span>
+        <div
+          class="text-[19px] flex flex-col items-start iphone_big:text-[24px] mt-4"
+        >
+          <span>Watch the film</span>
+          <span>Watch the event</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="flex flex-col items-center pb-[75px] pt-20.5">
+        <div class="flex items-center justify-center">
+          <div class="-z-10 flex iphone_mid:flex-row flex-col items-center">
+            <div class="flex iphone_mid:pr-0 mb-8 flex-col mr-7">
+              <span class="text-xl">iPhone 13 Pro Max</span>
+              <span class="text-3xl order-1 iphone_sm:order-2 font-bold">
+                17.0 cm
+              </span>
+              <span class="text-3xl order-2 iphone_sm:order-3 font-bold">
+                (6.7″)
+              </span>
+            </div>
+            <div class="w-[250px] iphone_mid:w-[300px] iphone_big:w-[700px]">
+              <img src="assets/left_iphone.7759c4f4.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="flex -ml-20 iphone_mid:-ml-36 iphone_big:-ml-52 mb-0 iphone_mid:flex-row flex-col-reverse iphone_mid:justify-center items-center"
+          >
+            <img src="assets/rightiphone.cdc6b7c8.png" alt="" />
+
+            <div class="flex pb-16 flex-col">
+              <span class="text-xl">iPhone 13 Pro Max</span>
+              <span class="text-3xl order-1 iphone_sm:order-2 font-bold">
+                17.0 cm
+              </span>
+              <span class="text-3xl order-2 iphone_sm:order-3 font-bold">
+                (6.7″)
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="text-center pt-20">
+          <span class="text-xl font-bold">
+            Super Retina XDR
+            <span class="after:content['1']">display</span>
+            with ProMotion
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="flex-col flex iphone_sm:flex-row items-center justify-between">
+      <div
+        class="text-xl flex content-around flex-col text-center font-semibold px-10"
+      >
+        <div></div>
+        <div><img src="assets/stacked.cfe24c40.jpg" alt="" /></div>
+        <span class="px-10 h-min">
+          Sierra Blue, Graphite, Gold, Silver and Alpine Green
+        </span>
+      </div>
+      <div class="bg-black mt-6 h-max overflow-y-hidden overflow-x-hidden">
+        <img
+          src="assets/half.44bbaad2.jpg"
+          class="translate-x-40 overflow-x-clip translate-y-20 -z-10"
+          alt=""
+        />
+      </div>
+    </div>
+    <div id="footer" class="bg-black py-5 text-white font-raleway text-center">
+      &copy; Made by Bhuvan @Maxtron_YT at Github.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
